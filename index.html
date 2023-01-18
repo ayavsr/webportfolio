@@ -6,62 +6,153 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Developer Portfolio</title>
 
+		<link rel="stylesheet" href="styles.css">
+
 		<!-- Bootstrap Link -->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
 	</head>
 
 	<body>
 		<!-- NAVBAR START -->
-		<nav id="top" class="nav nav-pills nav-fill sticky-top">
-			<a class="nav-link active" aria-current="page" href="#top">Home</a>
-			<a class="nav-link" href="#about">About</a>
-			<a class="nav-link" href="#projects">Projects</a>
-			<a class="nav-link" href="#tools">Tools</a>
-			<a class="nav-link" href="#contacts">Contacts</a>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-info sticky-top">
+			<a class="navbar-brand" href="#top">HOME</a>
+		
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+				<a class="nav-link" href="#aboutme">About Me<span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="#projects">Projects</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="#contact">Contact</a>
+				</li>
+			</ul>
+			</div>
 		</nav>
 		<!-- NAVBAR END -->
 
 		<!-- ABOUT SECTION START -->
-		<section id="about" class="text-center">
-			<div class="container-fluid row mt-5 justify-content-center align-items-center">
-				<img class="rounded-circle" width="250" src="https://media.istockphoto.com/id/453570223/vector/portrait-of-a-girl.jpg?b=1&s=612x612&w=0&k=20&c=esQ35horZjcvf7TZiQF6aJhk0i3sQ6-ayKA6-38CP_s=">
-				<div class="card">
-					<h1>My Neym</h1>
-					<h3>Full-Stack Developer</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<section id="aboutme" class="container-fluid text-center text-dark p-5" >
+			<div class="row d-md-flex justify-content-center">
+				<div class="col-10 col-md-4 order-md-2">
+					<img class="img-fluid border border-dark rounded-circle" width="250" src="./images/me.jpg">
 				</div>
+				<div class="col-10 col-md-6 order-md-1 p-2">
+					<h1 class="mb-3 font-weight-bold">Hi! I'm Aya !</h1>
+					<div class="d-md-flex justify-content-center">
+						<h5 class="font-weight-light mr-md-2">Aira San Roque</h5>
+						<h5 class="font-weight-light d-none d-md-flex"> - </h5>
+						<h5 class="font-weight-light font-italic ml-md-2"> Web Developer</h5>
+					</div>
+					<p class="offset-lg-1 text-justify mt-3">
+						This web page serves as my Official Portfolio for my Web Development Career. Yes. :>
+					</p>
+				</div>
+			</div>
 		</section>
 		<!-- ABOUT SECTION END -->
 
 		<!-- PROJECTS SECTION START -->
-		<section id="projects" class="container-fluid">
-			<div class="row mt-5">
-				
-			</div>
+		<h1 id="projects" class="text-center mt-5">My Projects</h1>
+		<section class="container-fluid text-center">
+			<div class="row d-lg-flex justify-content-center">
+
+	            <div class="col-lg-3 bg-dark text-light rounded p-4 mx-5 my-5">
+	                <img class="img-fluid" class="img-fluid" src="https://3.bp.blogspot.com/-7x5c_f1yzsQ/XHv9FZKHrEI/AAAAAAAADrE/4iGl9Lm6K2odX4SdWbU_RN6gZesx4IaGACEwYBhgL/s1600/html.jpg">
+	                <h3 class="mt-3">My 1st Project</h3>
+	                <p class="mt-3">Add prospect project here.</p>
+	            </div>
+
+	            <div class="col-lg-3 bg-dark text-light rounded p-4 mx-5 my-5">
+	                <img class="img-fluid" src="https://miro.medium.com/max/1100/1*2sNAb8cIxpOQ9Hi17hbg_A.webp">
+	                <h3 class="mt-3">My 2nd Project</h3>
+	                <p class="mt-3">Add prospect project here.</p>
+	            </div>
+
+	            <div class="col-lg-3 bg-dark text-light rounded p-4 mx-5 my-5">
+	                <img class="img-fluid" src="https://clever-solution.com/wp-content/uploads/2020/04/5625%D0%9C%D0%BE%D0%BD%D1%82%D0%B0%D0%B6%D0%BD%D0%B0%D1%8F-%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C-1-1280x720.png">
+	                <h3 class="mt-3">My 3rd Project</h3>
+	                <p class="mt-3">Add prospect project here.</p>
+	            </div>
+	        </div>
 		</section>
 		<!-- PROJECTS SECTION END -->
 
-		<!-- TOOLS SECTION START -->
-		<section id="tools" class="container-fluid">
-			<div class="row mt-5">
-				
-			</div>
-		</section>
-		<!-- TOOLS SECTION END -->
+		<!-- CONTACT SECTION START -->
+		<section class="text-light bg-secondary min-vh-75 p-5">
+			<h1 id="contact" class="text-center">Contact Me</h1>
+			<div class="row">
+				<form class="col-10 offset-1 offset-md-2 col-md-8 offset-xl-4 col-xl-4 bg-info p-3 rounded">
+					<div class="form">
+						<div class="row">
+							<div class="col">
+								<label class="text-light" for="first-name">First Name</label>
+    						</div>
+    						<div class="col">
+								<label class="text-light" for="last-name">Last Name</label>
+    						</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<input id="first-name" type="text" class="form-control"  placeholder="First name">
+    						</div>
+    						<div class="col">
+								<input id="last-name"  type="text" class="form-control" placeholder="Last name">
+    						</div>
+						</div>
+					</div>
 
-		<!-- CONTACTS SECTION START -->
-		<section id="contacts" class="container-fluid">
-			<div class="row mt-5">
-				
-			</div>
-		</section>
-		<!-- CONTACTS SECTION END -->
+					<div class="form">
+						<label class="text-light" for="email">Email</label>
+						<input id="email" type="email" class="form-control" placeholder="Email" >
+					</div>
 
+					<div class="form">
+						<label for="message">Message:</label>
+						<textarea id="message" class="form-control" rows="8" placeholder="Type your message here."></textarea>
+					</div>
+
+					<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">Send Email</button>
+				</form>
+			</div>
+
+			<!-- MODAL START -->
+			<div class="modal fade text-dark" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">Thank You for Contacting Us!</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        Message Succesfully Sent!
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<!-- MODAL END -->
+		</section>
+		<!-- CONTACT SECTION END -->
+
+		<!-- FOOTER START -->
+		<footer class="footer bg-info">
+			<div class="text-center font-weight-light text-white">
+				<p class="font-italic m-0">AIRA VILLANUEVA SAN ROQUE</p>
+				<p>© All Rights Reserved 2023</p>
+			</div>
+		</footer>
+		<!-- FOOTER END -->
 
 		<!-- Bootstrap Script -->
 		<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
